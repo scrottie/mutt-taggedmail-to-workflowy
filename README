@@ -1,0 +1,11 @@
+
+~/.taggedmail-to-workflowy.rc should contain the GUID of a shared Workflowy node.
+This sharing system is now obsolete and you can't make links like that any more
+so uh this code should probably be updated.
+
+Reads the mutt mailbox in $MAIL and looks for messages with X-Status headers
+with an 'F' in them.  Those are messages that are 'flagged' in mutt.
+
+Updates the Workflowy with the number, sender, and subject of those flagged
+messages, deleting things from the Workflowy that don't correspond to tagged
+messages in that format.
